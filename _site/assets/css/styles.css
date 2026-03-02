@@ -1,5 +1,39 @@
-.current {
-  color: green;
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  color: white !important;
+}
+
+main {
+  padding: 1rem;
+  margin: 1rem;
+}
+main p {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+@font-face {
+  font-family: "BlackGoth";
+  src: url("/assets/fonts/BlackgothRegular-xRg40.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+nav a {
+  color: white;
+}
+nav a:visited {
+  color: white;
+}
+
+.navbar-brand a {
+  color: white;
+  font-family: "Blackgoth", sans-serif;
+}
+.navbar-brand a:visited {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

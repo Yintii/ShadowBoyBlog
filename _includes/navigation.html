@@ -1,6 +1,6 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar has-background-black has-text-white" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="/">
+    <a class="navbar-item is-size-1" href="/">
       ShadowBoy
     </a>
 
@@ -12,7 +12,7 @@
     </a>
   </div>
 
-  <div id="navbar-menu" class="navbar-menu">
+  <div id="navbar-menu" class="navbar-menu has-background-black">
     <div class="navbar-start">
       {% for item in site.data.navigation %}
         <a href="{{ item.link }}" {% if page.url == item.link %} class="current navbar-item" {% endif %} class="navbar-item">
