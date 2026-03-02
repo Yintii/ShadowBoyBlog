@@ -1,0 +1,24 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      ShadowBoy
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbar-menu" class="navbar-menu">
+    <div class="navbar-start">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" {% if page.url == item.link %} class="current navbar-item" {% endif %} class="navbar-item">
+          {{ item.name }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</nav>
