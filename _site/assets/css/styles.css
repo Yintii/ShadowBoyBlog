@@ -6,10 +6,6 @@ html, body {
   color: white !important;
 }
 
-main {
-  padding: 1rem;
-  margin: 1rem;
-}
 main p {
   padding: 0.5rem;
   margin: 1rem;
@@ -34,6 +30,10 @@ nav a:visited {
 }
 .navbar-brand a:visited {
   color: white;
+}
+
+.sunset-grad {
+  background: linear-gradient(black, #280905, #740A03, #C3110C, #E6501B);
 }
 
 /*# sourceMappingURL=styles.css.map */
